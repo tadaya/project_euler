@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Even Fibonacci Numbers</title>
+</head>
+<body>
+  <h1>Even Fibonacci Numbers - Euler Problem 2</h1>
+  <script type="text/javascript">
+    var fibonacci = function() {
+      x = 1;
+      x2 = 2;
+      sumEvens = 2;
+      while (x2 <= 4000000) {
+        x2 = x2 + x;
+        x = x2 - x;
+        console.log(x2)
+        if (x2 % 2 === 0) {
+          sumEvens += x2;
+        };
+      };
+      return sumEvens;
+    };
+  </script>
+</body>
